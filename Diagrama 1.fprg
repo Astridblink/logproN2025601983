@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Diagrama 1"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-12 07:36:18 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTEyOzA1OjQzOjQ5IHAuIG0uOzI0ODg="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTEyOzA3OjM2OjE4IHAuIG0uOzE7MjU5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PAQ, PAGA, Pisr" type="Real" array="False" size=""/>
+            <assign variable="PAQ" expression="12.0"/>
+            <assign variable="PAGA" expression="0.5"/>
+            <assign variable="Pisr" expression="0.1"/>
+            <declare name="numPaq, totalC" type="Integer" array="False" size=""/>
+            <declare name="salarioB, salarioN, isr" type="Real" array="False" size=""/>
+            <input variable="numPaq"/>
+            <assign variable="salarioB" expression="numPaq*PAGA"/>
+            <assign variable="isr" expression="salarioB*Pisr"/>
+            <assign variable="salarioN" expression="salarioB-isr"/>
+            <assign variable="totalC" expression="numPaq*PAQ"/>
+            <output expression="salarioB" newline="True"/>
+            <output expression="isr" newline="True"/>
+            <output expression="salarioN" newline="True"/>
+            <output expression="totalC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Don jose(diagrama)"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-13 07:46:18 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTEzOzA2OjQwOjI5IHAuIG0uOzI0ODU="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTEzOzA3OjQ2OjE4IHAuIG0uOzE7MjU5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DineroMC, IVA, Total, MetrosC, IV" type="Real" array="False" size=""/>
+            <assign variable="MetrosC" expression="9256.00"/>
+            <assign variable="IVA" expression="0.16"/>
+            <declare name="AREA, LADO" type="Integer" array="False" size=""/>
+            <input variable="AREA"/>
+            <assign variable="DineroMC" expression="MetrosC*AREA"/>
+            <assign variable="IV" expression="DineroMC*IVA"/>
+            <assign variable="Total" expression="DineroMC+IV"/>
+            <output expression="DineroMC" newline="True"/>
+            <output expression="IV" newline="True"/>
+            <output expression="Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
