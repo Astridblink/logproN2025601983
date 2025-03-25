@@ -1,1 +1,43 @@
-Archivo 1 
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="React 1"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-24 06:26:11 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTI0OzA2OjE2OjU4IHAuIG0uOzI0OTI="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTI0OzA2OjI2OjExIHAuIG0uOzE7MjU5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumDonas" type="Integer" array="False" size=""/>
+            <declare name="Pieza, Descuento, Descuento2" type="Integer" array="False" size=""/>
+            <assign variable="Pieza" expression="10"/>
+            <assign variable="Descuento" expression="1"/>
+            <assign variable="Descuento2" expression="2"/>
+            <output expression="&quot;&#191;Cual es el NumDonas?&quot;" newline="True"/>
+            <input variable="NumDonas"/>
+            <if expression="NumDonas &lt;30">
+                <then>
+                    <output expression="NumDonas*Pieza" newline="True"/>
+                </then>
+                <else>
+                    <if expression="NumDonas &gt;=50">
+                        <then>
+                            <output expression="(Pieza*NumDonas)-(Descuento2*NumDonas)" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="NumDonas &gt;=30">
+                                <then>
+                                    <output expression="(Pieza*NumDonas)-(Descuento*NumDonas)" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
