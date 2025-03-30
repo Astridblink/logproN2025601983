@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="React 3"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-29 05:59:28 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTI5OzExOjM5OjI5IGEuIG0uOzI0ODE="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTI5OzA1OjU5OjI4IHAuIG0uOzI7MjYwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sexo, Nombre" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;Cual es su nombre?&quot;" newline="True"/>
+            <input variable="Nombre"/>
+            <output expression="&quot;&#191;Cual es tu sexo(Hombre,Mujer)?&quot;" newline="True"/>
+            <input variable="Sexo"/>
+            <if expression="(Sexo == &quot;Mujer&quot; AND Nombre &lt; &quot;M&quot;) OR (Sexo == &quot;Hombre&quot; AND Nombre &gt; &quot;N&quot;)">
+                <then>
+                    <output expression="&quot;Perteneces al grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Perteneces al grupo B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
