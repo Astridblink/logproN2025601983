@@ -1,1 +1,39 @@
-Archivo 1  echo Archivo 2 
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="React 4"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-29 06:40:04 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTI5OzA2OjM2OjExIHAuIG0uOzI0ODg="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTAzLTI5OzA2OjQwOjA0IHAuIG0uOzE7MjU5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;Cual es tu edad?&quot;" newline="True"/>
+            <input variable="Edad"/>
+            <if expression="Edad&lt;4">
+                <then>
+                    <output expression="&quot;La entrada es gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad&gt;=4 AND Edad&lt;=18">
+                        <then>
+                            <output expression="&quot;El costo de la entrada es de 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Edad&gt;18">
+                                <then>
+                                    <output expression="&quot;El costo de la entrada es de 500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
