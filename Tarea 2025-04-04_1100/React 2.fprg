@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="React 2"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 11:26:45 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTAzOzA4OjU2OjM4IHAuIG0uOzI0OTQ="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTAzOzExOjI2OjQ1IHAuIG0uOzI7MjU5Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tipoPizza, ingrediente" type="Integer" array="False" size=""/>
+            <output expression="&quot;Tenemos:1.Pizza vegetariana y 2.No vegetariana&quot;" newline="True"/>
+            <output expression="&quot;Elige un tipo de pizza:&quot;" newline="True"/>
+            <input variable="tipoPizza"/>
+            <if expression="tipoPizza==1">
+                <then>
+                    <output expression="&quot;Estos son los ingredientes:1.Pimiento, 2.Tofu&quot;" newline="True"/>
+                    <output expression="&quot;Elige entre estas opciones&quot;" newline="True"/>
+                    <input variable="ingrediente"/>
+                    <if expression="ingrediente==1">
+                        <then>
+                            <output expression="&quot;Pizza vegetariana con: Mozzarella, Tomate, pimiento&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ingrediente==2">
+                                <then>
+                                    <output expression="&quot;Pizza vegetariana con: Mozzarella, Tomate, Tofu&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="tipoPizza==2">
+                        <then>
+                            <output expression="&quot;Ingredientes: 1. Peperoni, 2. Jam&#243;n, 3. Salm&#243;n&quot;" newline="True"/>
+                            <output expression="&quot;Elige alguna de estas opciones&quot;" newline="True"/>
+                            <input variable="ingrediente"/>
+                            <if expression="ingrediente == 1">
+                                <then>
+                                    <output expression="&quot;Pizza no vegetariana con: Mozzarella, Tomate, Peperoni&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="ingrediente == 2">
+                                        <then>
+                                            <output expression="&quot;Pizza no vegetariana con: Mozzarella, Tomate, Jam&#243;n&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="ingrediente == 3">
+                                                <then>
+                                                    <output expression="&quot;Pizza no vegetariana con: Mozzarella, Tomate, Salm&#243;n&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Opcion invalida&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;No hay&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
