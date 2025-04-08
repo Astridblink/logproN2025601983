@@ -1,1 +1,28 @@
-Archivo 1  y echo Archivo 2 
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="React 2"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 05:21:40 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTA4OzA1OjE1OjQwIHAuIG0uOzI0ODQ="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTA4OzA1OjIxOjQwIHAuIG0uOzE7MjU4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <assign variable="c" expression="2"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+            <while expression="c&lt;64">
+                <output expression="a+b" newline="True"/>
+                <assign variable="b" expression="a+b"/>
+                <assign variable="a" expression="b-a"/>
+                <assign variable="c" expression="c+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
