@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial de un numero"/>
+        <attribute name="authors" value="ADREAMER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 07:30:26 p. m."/>
+        <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTA1OzEyOjE3OjQ3IHAuIG0uOzI0ODg="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTA3OzA3OjMwOjI2IHAuIG0uOzI7MjU5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, factorial" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;Escribe un numero que no sea negativo&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;&#10;0">
+                <then>
+                    <while expression="i &lt;= n">
+                        <assign variable="factorial" expression="factorial*i"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;No hay factorial para numeros negativos&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
