@@ -4,29 +4,31 @@
         <attribute name="name" value="Factorial de un numero"/>
         <attribute name="authors" value="ADREAMER"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-04-07 07:30:26 p. m."/>
+        <attribute name="saved" value="2025-04-08 06:53:20 p. m."/>
         <attribute name="created" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTA1OzEyOjE3OjQ3IHAuIG0uOzI0ODg="/>
-        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTA3OzA3OjMwOjI2IHAuIG0uOzI7MjU5NQ=="/>
+        <attribute name="edited" value="QURSRUFNRVI7UE4xNDA0UDsyMDI1LTA0LTA4OzA2OjUzOjIwIHAuIG0uOzM7MjU5NQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="i, n, factorial" type="Integer" array="False" size=""/>
+            <declare name="i, r, Factorial" type="Integer" array="False" size=""/>
             <assign variable="i" expression="1"/>
-            <assign variable="factorial" expression="1"/>
+            <assign variable="Factorial" expression="1"/>
             <output expression="&quot;Escribe un numero que no sea negativo&quot;" newline="True"/>
-            <input variable="n"/>
-            <if expression="n&gt;&#10;0">
+            <input variable="r"/>
+            <if expression="r&gt;&#10;0">
                 <then>
-                    <while expression="i &lt;= n">
-                        <assign variable="factorial" expression="factorial*i"/>
+                    <while expression="i &lt;= r">
+                        <assign variable="Factorial" expression="Factorial*i"/>
                         <assign variable="i" expression="i+1"/>
                     </while>
                 </then>
                 <else>
-                    <output expression="&quot;No hay factorial para numeros negativos&quot;" newline="True"/>
+                    <output expression="&quot;No existe el factorial en numeros negativos&quot;" newline="True"/>
                 </else>
             </if>
+            <output expression="&quot;Este es el factorial de r:&quot;" newline="True"/>
+            <output expression="Factorial" newline="True"/>
         </body>
     </function>
 </flowgorithm>
